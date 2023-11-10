@@ -10,9 +10,6 @@ class NumbersPage extends StatelessWidget {
         image: 'assets/images/numbers/number_one.png',
         jpName: 'ichi',
         enName: 'one',
-
-        /* notice here that a didn't add 'assets/' to the path because AssetSource put it by default 
-        so you need to asur that you audio files are inside folder with name "assets" */
         sound: 'sounds/numbers/number_one_sound.mp3'),
     ItemModel(
         image: 'assets/images/numbers/number_two.png',
