@@ -8,6 +8,8 @@ class Item extends StatelessWidget {
   Item({super.key, required this.item, required this.color});
   final ItemModel item;
   final Color color;
+
+  // using AudioPlayer instead of AudioCashe
   final player = AudioPlayer();
 
   @override
@@ -74,9 +76,9 @@ class Item extends StatelessWidget {
               boxShadow: List.filled(
                 2,
                 BoxShadow(
-                  blurRadius: 4,
-                  offset: Offset.fromDirection(4),
-                  color: const Color(0x45000000)                ),
+                    blurRadius: 4,
+                    offset: Offset.fromDirection(4),
+                    color: const Color(0x45000000)),
               ),
             ),
             height: 100,
@@ -113,6 +115,7 @@ class Item extends StatelessWidget {
                 IconButton(
                   padding: const EdgeInsets.only(right: 28),
                   onPressed: () {
+                    // play method with AssetsSource parameter
                     player.play(
                       AssetSource(item.sound),
                     );

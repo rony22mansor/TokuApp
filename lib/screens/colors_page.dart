@@ -10,7 +10,10 @@ class ColorsPage extends StatelessWidget {
         image: 'assets/images/colors/color_black.png',
         jpName: 'ichi',
         enName: 'black',
-        sound: 'sounds/colors/black.wav'),
+        
+        /* notice here that a didn't add 'assets/' to the path because AssetSource put it by default 
+        so you need to asur that you audio files are inside folder with name "assets" */
+        sound: 'sounds/colors/black.wav'),  
     ItemModel(
         image: 'assets/images/colors/color_brown.png',
         jpName: 'ichi',

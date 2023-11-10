@@ -9,6 +9,9 @@ class FamilyMembersPage extends StatelessWidget {
         image: 'assets/images/family_members/family_daughter.png',
         jpName: 'ichi',
         enName: 'daughter',
+
+        /* notice here that a didn't add 'assets/' to the path because AssetSource put it by default 
+        so you need to asur that you audio files are inside folder with name "assets" */
         sound: 'sounds/family_members/daughter.wav'),
     ItemModel(
         image: 'assets/images/family_members/family_father.png',
